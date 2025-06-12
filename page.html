@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinzzy Defi</title>
+    <link rel="stylesheet" href="./page.css">
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link defer href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+</head>
+<body>
+      <nav class="navbar navbar-dark fixed-top">
+  <div class="container-fluid">
+    <img src="./Chinzzy logo.jpg" alt="" id="chinzzy">
+    <a class="navbar-brand fw-bold text-warning" href="#">Chinzzy <span class="text-primary fw-bold">Coin</span> </a>
+    <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <img src="./Chinzzy logo.jpg" alt="" width="120px" id="chinzzy">
+        <h5 class="offcanvas-title fw-bold text-light" id="offcanvasNavbarLabel"> -Coin</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            
+          <li class="nav-item">
+            <a class="nav-link active fw-bold text-light" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold text-light" href="./response.html">Contact Us</a>
+          </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold text-light"  href="./team.html"> Meet the team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold text-light"  href="#"> FAQ</a>
+          </li>
+          <br> <br>
+          <button type="button" class="btn fw-bold text-warning btn-outline-light" onclick="alert()" >Connect Wallet</button>
+        </ul>
+       </div>
+    </div>
+  </div>
+</nav>
+
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner top-0">
+    <div class="carousel-item active" data-bs-interval="5000">
+      <img src="./technology-7111804_640.jpg" class="d-block w-100" alt="..." id="image">
+      <div class="carousel-caption">
+          <h5 class="fly-in text-danger fw-bold display-3" id="textt">Chinzzy<span class="text-light fw-bold">- Defi</span></h5>
+          <p class="fly-in text-light fw-bold display-3" style="animation-delay: 0.5s;">Decentralized Finance.</p>
+          <a href="./team.html" class="btn btn-outline-light display-3 text-light fw-bold btn-lg fly-in">Meet the team</a>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="5000">
+      <img src="./affiliate marketing.jpg" class="d-block w-100" alt="..." id="image" >
+      <div class="carousel-caption">
+          <h5 class="fly-in text-danger fw-bold display-3" id="textt">Chinzzy<span class="text-light fw-bold">- Defi</span></h5>
+           <p class="fly-in text-light fw-bold display-3" style="animation-delay: 0.5s;">Trade with us, Accept all kinds of coins</p>
+          <a href="./team.html" class="btn btn-outline-light text-light display-3 fw-bold btn-lg fly-in">Meet the team</a>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="5000">
+      <img src="./block-chain-3055701_640.jpg" class="d-block w-100" alt="..." id="image" >
+      <div class="carousel-caption top-0">
+           <h5 class="fly-in text-danger fw-bold display-3" id="textt">Chinzzy<span class="text-light fw-bold">- Defi</span></h5>
+          <p class="fly-in text-light fw-bold display-3" style="animation-delay: 0.5s;">The world is evolving everyday.</p>
+          <a href="./team.html" class="btn btn-outline-light text-light display-3 fw-bold btn-lg fly-in">Meet the team</a>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="5000">
+      <img src="./money-heist-6632767_1280.jpg" class="d-block w-100" alt="..." id="image" >
+      <div class="carousel-caption">
+           <h5 class="fly-in text-danger fw-bold display-3" id="textt">Chinzzy<span class="text-light fw-bold">- Defi</span></h5>
+          <p class="fly-in text-light fw-bold display-3" style="animation-delay: 0.5s;">Specially designed coin for you.</p>
+          <a href="./team.html" class="btn btn-outline-light text-light display-3 fw-bold btn-lg fly-in">Book Appointment</a>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<div id="coin-title">Chinzzy DeFi Coin Token Distribution</div>
+
+<div id="chart-container" class="mx-auto">
+    <canvas id="tokenDistributionChart"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const ctx = document.getElementById('tokenDistributionChart').getContext('2d');
+
+        // Data for the chart
+        const data = {
+            labels: ['Team', 'Investors', 'Marketing', 'Development', 'Reserves'],
+            datasets: [{
+                data: [30, 25, 20, 15, 10],
+                backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0', '#9966FF'],
+                hoverOffset: 10,
+            }]
+        };
+
+        // Chart configuration
+        const config = {
+            type: 'pie',
+            data: data,
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            font: {
+                                size: 14, // Increase legend font size
+                                family: "'Arial', sans-serif", // Ensure a clear font
+                                weight: 'bold', // Bold text
+                            },
+                            color: '#333', // Use a darker color for contrast
+                        },
+                    },
+                    tooltip: {
+                        backgroundColor: 'rgba(0, 0, 0, 0.7)', // Dark background for better readability
+                        titleFont: {
+                            size: 16, // Tooltip title font size
+                            family: "'Arial', sans-serif",
+                        },
+                        bodyFont: {
+                            size: 14, // Tooltip body font size
+                            family: "'Arial', sans-serif",
+                        },
+                        callbacks: {
+                            label: function (tooltipItem) {
+                                const value = data.datasets[0].data[tooltipItem.dataIndex];
+                                const total = data.datasets[0].data.reduce((sum, val) => sum + val, 0);
+                                const percentage = ((value / total) * 100).toFixed(2);
+                                return `${data.labels[tooltipItem.dataIndex]}: ${value} (${percentage}%)`;
+                            },
+                        },
+                    },
+                },
+                layout: {
+                    padding: {
+                        top: 20,
+                        bottom: 20,
+                    },
+                },
+            },
+        };
+
+        // Render the pie chart
+        new Chart(ctx, config);
+    });
+</script>
+
+
+
+
+<footer class="footer">
+    <div class="footer-container">
+      
+      <div class="footer-column">
+        <img src="./Chinzzy logo.jpg" alt="S-Tate Auto Logo" class="animated-text" id="chinzzy">
+        <p class="tagline">The defi coin you've been waiting for</p>
+      </div>
+      <br>
+
+  
+      <div class="footer-column">
+        <h3>Home</h3>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Career</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-column">
+        <h3>Our Locations</h3>
+        <p>
+          <strong>Moasu Benue State, Kgn</strong><br>
+          <strong>College of health science</strong><br>
+          Contact#: +234 706 105 5818 <br><br>
+          <strong>Emergency Contact</strong>: +234 912 615 0024<br><br>
+          <strong>Email</strong>: chinzzydefi@gmail.com
+        </p>
+      </div>
+
+      
+      <div class="footer-column">
+        <h3>Subscribe to our Defi Channel</h3>
+        <form class="newsletter-form">
+          <input type="text" placeholder="Full Name" required>
+          <input type="email" placeholder="Email" required>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="fw-bold display-4 slide-in-left align-text-center">&copy;2025 Proudly designed by Chinzzy - +234 706 105 5818</p> <br>
+      <div class="social-icons">
+            
+            <a href="https://web.facebook.com/profile.php?id=61571746187559" target="_blank" class="social-icon">
+              <i class="fab fa-facebook"></i>
+            </a>
+            
+            <a href="https://wa.link/bs14ad" target="_blank" class="social-icon">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            
+            <a href="https://www.tiktok.com/@drchinzzy?_t=ZM-8vExzfmk7zb&_r=1" target="_blank" class="social-icon">
+              <i class="fab fa-tiktok"></i>
+            </a>
+
+            <a href="https://x.com/chinzzy77" target="_blank" class="social-icon">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+    </div>
+  </footer>
+
+
+<script src="./bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+
+<script src="./java.js"></script>
+
+
+
+    
+</body>
+</html>

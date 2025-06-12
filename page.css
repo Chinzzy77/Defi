@@ -1,0 +1,214 @@
+#chinzzy{
+            border-radius: 50%;
+            width: 80px;
+        }
+        #offcanvasNavbar{
+            background: url('./coin\ img.jpg') no-repeat center center/cover;
+        }
+
+.navbar {
+  background-color: transparent;
+  transition: background-color 10.0s ease-in-out;
+}
+.navbar-toggler{
+    color: black;
+}
+body{
+    background-color: burlywood;
+}
+
+@keyframes flyIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Apply animation to text */
+.fly-in {
+  animation: flyIn 6s ease-out;
+}
+
+.fly-in {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all 8.5s ease-out;
+}
+
+.fly-in.show {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+#image {
+    filter: brightness(0.7);
+    height: 500px;
+    object-fit: cover;
+}
+#textt{
+    margin-top: 130px;
+}
+.navbar.scrolled {
+  background-color: blue; /* Bootstrap primary blue */
+}
+
+.footer {
+  background-color: #202020;
+  color: #ffffff;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-logo {
+  max-width: 150px;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: 20px;
+  color: whitesmoke;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h3 {
+  color: #ffd700;
+  margin-bottom: 10px;
+  
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+ul li a:hover {
+  color: #ffd700;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter-form input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.newsletter-form button {
+  padding: 10px;
+  background-color: #ff4b4b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.newsletter-form button:hover {
+  background-color: #e63939;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 12px;
+  color: #cccccc;
+}
+
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center; 
+    margin-top: 50px;
+    align-content: center;
+  }
+
+  .social-icon i {
+    font-size: 40px;
+    color: whitesmoke; 
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .social-icon i:hover {
+    color: #007bff;
+  }
+
+ #chart-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    padding: 20px;
+    animation: border-pulse 2s infinite;
+}
+#chart-container canvas {
+    width: 100%;
+    height: auto;
+    border: 8px solid transparent;
+    border-radius: 50%;
+    animation: border-pulse 2s infinite;
+}
+
+        #coin-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            justify-content: center;
+            align-self: center;
+            
+        }
+        @keyframes border-pulse {
+            0% {
+                border-color: #FF6384;
+            }
+            33% {
+                border-color: #36A2EB;
+            }
+            66% {
+                border-color: #FFCE56;
+            }
+            100% {
+                border-color: #FF6384;
+            }
+        }
+
